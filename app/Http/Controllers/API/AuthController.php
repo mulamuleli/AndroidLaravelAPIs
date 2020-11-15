@@ -65,7 +65,7 @@ class AuthController extends Controller
                     
                 ]
             );
-        }
+        }   
         catch(Exception $error)
         {
             return response()->json(
