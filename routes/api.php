@@ -15,4 +15,7 @@ use Illuminate\Http\Request;
 Route::post('login','API\AuthController@Login');
 Route::post('register', 'API\AuthController@Register');
 Route::get('logout','API\AuthController@Logout');
-
+Route::post('post/create','API\PostController@create');
+Route::post('post/delete','API\PostController@delete');
+Route::post('post/update','API\PostController@update');
+Route::get('posts','API\PostController@posts');
